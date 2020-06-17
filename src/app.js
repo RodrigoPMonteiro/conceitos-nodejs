@@ -66,7 +66,7 @@ app.put("/repositories/:id", (request, response) => {
   // atualiza o array original( tabela do banco ) com os dados que vieram nos Route Params
   repositories[repoIndex] = updatedRepo;
 
-  // devolve somente a variável atualizada!
+  // devolve somente a variável
   return response.json(updatedRepo);
 
   //PUT /repositories/:id: A rota deve alterar apenas o title, a url e as techs do repositório que
