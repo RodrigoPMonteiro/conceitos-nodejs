@@ -1,4 +1,4 @@
-# desafio-conceitos-nodejs
+## desafio-conceitos-nodejs
 Repositório para armazenamento do Desafio: Conceitos do NodeJs no Bootcamp GoStack
 
 <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
@@ -19,7 +19,7 @@ Repositório para armazenamento do Desafio: Conceitos do NodeJs no Bootcamp GoSt
   <a href="#memo-licença">Licença</a>
 </p>
 
-## :rocket: Sobre o desafio
+### :rocket: Sobre o desafio
 
 Nesse desafio foi solicitada a criação de uma aplicação para treinamento do que foi aprendido no módulo "Conceitos: NodeJs!
 
@@ -94,22 +94,43 @@ Para esse desafio temos os seguintes testes:
 
 - **`should not be able to like a repository that does not exist`**: Para que esse teste passe, você deve validar na sua rota de like se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status `400`.
 
-## Testes integrados
+### Testes integrados
 
 Foi utilizado o jest para validação dos scripts e aprovação dos detalhes exigidos acima.
 
 Após implementar todas as rotas e validações corretamente, a contagem de "passed" será igual a 9, conforme imagem abaixo:
 
 <p align="center">
-  <img  src="./assets/nodejs-test-approved.png">
+  <img height="200" width="600" src="./assets/nodejs-test-approved.png">
 </p>
 
-## :calendar: Entrega
+### Maior dificuldade encontrada no projeto:
+- **`should not be able to update repository likes manually`**:
+
+O desafio acima apresentou uma dificuldade maior pois exigia a criação de uma variável "updated" que armazenasse os dados de "title", "url" e "techs" do id informado na requisição, de modo que ao atualizar o array de repositórios, os likes não fossem alterados já que somente pela rota POST /repositories/:id/like deverá ser possível incrementar os valores do campo "likes".
+
+O método put nesse caso ficou assim:
+
+<p align="center">
+  <img height="500" width="600" src="./assets/nodejs-test-hard.png">
+</p>
+
+### :calendar: Entrega
 
 O desafio foi entregue a partir da plataforma Skylab, através do envio do link do repositório. 
 Como dia, após concluir o desafio, fazer um post no Linkedin e postar o código no Github é uma forma de demonstração de conhecimentos e esforços para evolução na carreira e oportunidades futuras.
 
-## :memo: Licença
+
+### Desafio realizado e aprovado no Skylab!
+
+Após validação dos testes integrados e entrega do desafio, após alguns minutos será exibida a mensagem abaixo no desafio:
+
+<p align="center">
+  <img height="300" width="400" src="./assets/nodejs-challenge.png">
+</p>
+
+
+### :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
