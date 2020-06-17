@@ -94,6 +94,16 @@ Para esse desafio temos os seguintes testes:
 
 - **`should not be able to like a repository that does not exist`**: Para que esse teste passe, você deve validar na sua rota de like se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status `400`.
 
+## Testes integrados
+
+Foi utilizado o jest para validação dos scripts e aprovação dos detalhes exigidos acima.
+
+Após implementar todas as rotas e validações corretamente, a contagem de "passed" será igual a 9, conforme imagem abaixo:
+
+<p align="center">
+  <img  src="./assets/nodejs-test-approved.png">
+</p>
+
 ## :calendar: Entrega
 
 O desafio foi entregue a partir da plataforma Skylab, através do envio do link do repositório. 
